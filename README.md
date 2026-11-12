@@ -18,6 +18,10 @@ Treatments in `prices.csv` on 2026-11-12: Compounded tirzepatide injection (34),
 - Compounded drugs are not FDA-approved. Nothing here is medical advice or a health claim.
 - Column definitions and how prices are normalised: https://telehealthledger.com/methodology . Corrections: https://telehealthledger.com/corrections .
 
+## Browse or query it without installing anything
+- GitHub shows `data/prices.csv` as a searchable table.
+- To filter, sort or run SQL in your browser, open this snapshot in Datasette Lite (a third-party tool that runs in the browser and loads the file from this repository): https://lite.datasette.io/?csv=https://raw.githubusercontent.com/BradyH123/telehealth-ledger-prices/main/data/prices.csv
+
 ## Check the published figures yourself
 `examples/reproduce_headline_figures.py` (Python standard library only) recomputes, from `data/prices.csv` alone, the figures published on https://telehealthledger.com/press for this snapshot: for example, 16 providers with a calendar-month continuing price for compounded semaglutide, from $99 to $299 a month, median $164. If your numbers differ from a published figure, that is a correction we want: https://telehealthledger.com/corrections .
 
