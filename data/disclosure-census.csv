@@ -1,0 +1,5 @@
+fact,providers_publishing,providers_tracked,as_of,scope,detail_url,license
+a price,27,31,2026-11-11,GLP-1 providers with a public offer in the commission-earning catalog,https://telehealthledger.com/glp-1/best,"CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); attribution: Telehealth Ledger, telehealthledger.com"
+a calendar-month continuing price,20,31,2026-11-11,GLP-1 providers with a public offer in the commission-earning catalog,https://telehealthledger.com/glp-1/best#lowest-continuing-price,"CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); attribution: Telehealth Ledger, telehealthledger.com"
+whether medication is included,31,31,2026-11-11,GLP-1 providers with a public offer in the commission-earning catalog,https://telehealthledger.com/glp-1/best#medication-included-lowest,"CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); attribution: Telehealth Ledger, telehealthledger.com"
+a split-pay option,4,31,2026-11-11,GLP-1 providers with a public offer in the commission-earning catalog,https://telehealthledger.com/financing,"CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); attribution: Telehealth Ledger, telehealthledger.com"

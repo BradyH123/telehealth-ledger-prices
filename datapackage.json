@@ -1,0 +1,268 @@
+{
+  "name": "telehealth-ledger-published-prices",
+  "title": "Telehealth Ledger published telehealth prices",
+  "version": "2026-11-12",
+  "description": "Dated checks of prices that US telehealth programs publish on their own pages. Snapshot saved 2026-11-12: 130 price rows across 31 providers, check dates 2026-10-25 to 2026-11-11. Each row carries the price, its basis, the date it was checked (verifiedAt) and the page it was read from (sourceUrl). Field types here are inferred from the files; definitions are at https://telehealthledger.com/methodology. The publisher earns commission from most of the providers it lists; the files carry no tracked links.",
+  "homepage": "https://telehealthledger.com/press",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Brady Hanlon",
+      "role": "author",
+      "organization": "Telehealth Ledger"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Telehealth Ledger",
+      "path": "https://telehealthledger.com/data/prices.csv"
+    }
+  ],
+  "keywords": [
+    "telehealth",
+    "prices",
+    "GLP-1",
+    "semaglutide",
+    "tirzepatide",
+    "NAD+",
+    "sermorelin",
+    "open data"
+  ],
+  "resources": [
+    {
+      "name": "prices",
+      "path": "data/prices.csv",
+      "title": "Published prices",
+      "description": "One row per published program price.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 54120,
+      "hash": "sha256:4c91d6eaca5d6962d0996cfa1318a4712c97185c6d607639a0dec560abe7a05e",
+      "schema": {
+        "fields": [
+          {
+            "name": "provider",
+            "type": "string"
+          },
+          {
+            "name": "slug",
+            "type": "string"
+          },
+          {
+            "name": "treatment",
+            "type": "string"
+          },
+          {
+            "name": "treatmentLabel",
+            "type": "string"
+          },
+          {
+            "name": "medicationType",
+            "type": "string"
+          },
+          {
+            "name": "productName",
+            "type": "string"
+          },
+          {
+            "name": "priceBasis",
+            "type": "string"
+          },
+          {
+            "name": "comparisonPriceUsd",
+            "type": "number"
+          },
+          {
+            "name": "introPriceUsd",
+            "type": "number"
+          },
+          {
+            "name": "salePriceUsd",
+            "type": "integer"
+          },
+          {
+            "name": "recurringPriceUsd",
+            "type": "number"
+          },
+          {
+            "name": "recurringPriceLowUsd",
+            "type": "integer"
+          },
+          {
+            "name": "recurringPeriodDays",
+            "type": "integer"
+          },
+          {
+            "name": "upfrontPriceUsd",
+            "type": "number"
+          },
+          {
+            "name": "effectiveMonthlyPriceUsd",
+            "type": "number"
+          },
+          {
+            "name": "commitmentMonths",
+            "type": "integer"
+          },
+          {
+            "name": "medicationIncluded",
+            "type": "boolean"
+          },
+          {
+            "name": "verifiedAt",
+            "type": "date"
+          },
+          {
+            "name": "sourceUrl",
+            "type": "string"
+          },
+          {
+            "name": "profileUrl",
+            "type": "string"
+          },
+          {
+            "name": "priceRole",
+            "type": "string"
+          },
+          {
+            "name": "lowestPriceUsd",
+            "type": "integer"
+          },
+          {
+            "name": "approvalLabel",
+            "type": "string"
+          },
+          {
+            "name": "license",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "price-changes",
+      "path": "data/price-changes.csv",
+      "title": "Recorded price changes",
+      "description": "Dated log, 2026-08-22 to 2026-11-11, 180 entries: 73 'Re-verified at a new price', 102 'Record corrected / relabeled', 5 'Pulled pending re-verification'. Only 'Re-verified at a new price' entries are a provider's price changing; the others are this site's own corrections or pulls.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 63596,
+      "hash": "sha256:4c8489685454e16b6ca0572f9674726a2a4e6a368f481f9eec8f500428346809",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "name": "dateSource",
+            "type": "string"
+          },
+          {
+            "name": "provider",
+            "type": "string"
+          },
+          {
+            "name": "treatment",
+            "type": "string"
+          },
+          {
+            "name": "basis",
+            "type": "string"
+          },
+          {
+            "name": "field",
+            "type": "string"
+          },
+          {
+            "name": "oldValue",
+            "type": "string"
+          },
+          {
+            "name": "newValue",
+            "type": "string"
+          },
+          {
+            "name": "changeKind",
+            "type": "string"
+          },
+          {
+            "name": "sourceUrl",
+            "type": "string"
+          },
+          {
+            "name": "providerSlug",
+            "type": "string"
+          },
+          {
+            "name": "treatmentSlug",
+            "type": "string"
+          },
+          {
+            "name": "productName",
+            "type": "string"
+          },
+          {
+            "name": "record",
+            "type": "string"
+          },
+          {
+            "name": "license",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "disclosure-census",
+      "path": "data/disclosure-census.csv",
+      "title": "Disclosure census",
+      "description": "Counts of tracked providers that publish each fact, with scope and date.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1176,
+      "hash": "sha256:7dfa75f6a9ef2837b02b274dd049e4c919794ec12be2c04995678e00850a7b0b",
+      "schema": {
+        "fields": [
+          {
+            "name": "fact",
+            "type": "string"
+          },
+          {
+            "name": "providers_publishing",
+            "type": "integer"
+          },
+          {
+            "name": "providers_tracked",
+            "type": "integer"
+          },
+          {
+            "name": "as_of",
+            "type": "date"
+          },
+          {
+            "name": "scope",
+            "type": "string"
+          },
+          {
+            "name": "detail_url",
+            "type": "string"
+          },
+          {
+            "name": "license",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

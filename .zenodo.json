@@ -1,0 +1,30 @@
+{
+  "upload_type": "dataset",
+  "title": "Telehealth Ledger published telehealth prices (snapshot 2026-11-12)",
+  "creators": [
+    {
+      "name": "Hanlon, Brady",
+      "affiliation": "Telehealth Ledger"
+    }
+  ],
+  "description": "Dated checks of prices that US telehealth programs publish on their own pages. Snapshot saved 2026-11-12: 130 price rows across 31 providers, check dates 2026-10-25 to 2026-11-11. Each row carries the price, its basis, the date it was checked (verifiedAt) and the page it was read from (sourceUrl). Field types here are inferred from the files; definitions are at https://telehealthledger.com/methodology. The publisher earns commission from most of the providers it lists; the files carry no tracked links.",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "telehealth",
+    "prices",
+    "GLP-1",
+    "semaglutide",
+    "tirzepatide",
+    "NAD+",
+    "sermorelin",
+    "open data"
+  ],
+  "version": "2026-11-12",
+  "related_identifiers": [
+    {
+      "identifier": "https://telehealthledger.com/data/prices.csv",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    }
+  ]
+}

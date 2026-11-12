@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Telehealth Ledger published telehealth prices"
+version: "2026-11-12"
+date-released: "2026-11-12"
+authors:
+  - family-names: Hanlon
+    given-names: Brady
+    affiliation: Telehealth Ledger
+url: "https://telehealthledger.com/press"
+license: CC-BY-4.0
+keywords: [telehealth, prices, GLP-1, semaglutide, tirzepatide, open data]
