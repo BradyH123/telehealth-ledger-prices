@@ -18,6 +18,9 @@ Treatments in `prices.csv` on 2026-11-12: Compounded tirzepatide injection (34),
 - Compounded drugs are not FDA-approved. Nothing here is medical advice or a health claim.
 - Column definitions and how prices are normalised: https://telehealthledger.com/methodology . Corrections: https://telehealthledger.com/corrections .
 
+## Check the published figures yourself
+`examples/reproduce_headline_figures.py` (Python standard library only) recomputes, from `data/prices.csv` alone, the figures published on https://telehealthledger.com/press for this snapshot: for example, 16 providers with a calendar-month continuing price for compounded semaglutide, from $99 to $299 a month, median $164. If your numbers differ from a published figure, that is a correction we want: https://telehealthledger.com/corrections .
+
 ## Who publishes this and how it is funded
 Telehealth Ledger is edited by Brady Hanlon. The site earns a commission from most of the providers it lists when a reader signs up through its visit link. The data files carry no tracked links; `sourceUrl` is the provider's own page.
 
